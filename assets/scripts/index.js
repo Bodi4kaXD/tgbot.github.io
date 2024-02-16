@@ -157,7 +157,7 @@ window.document.addEventListener('DOMContentLoaded' , function main() {
 
     function sendCartToTelegram() {
         const botToken = '6722686062:AAEjO0wEnBC1JJCalkuEEId5a6b3LJJ6yyk';
-        const chatId = user.id;
+        const chatId = idUser;
 
         if (!chatId) {
             console.error('Chat ID not available.');
