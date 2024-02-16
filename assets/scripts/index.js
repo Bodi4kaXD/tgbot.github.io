@@ -1,6 +1,6 @@
 window.document.addEventListener('DOMContentLoaded' , function main() { 
-    //let tg = window.Telegram.WebApp;
-    //let idUser = tg.initDataUnsafe.user.id;
+    let tg = window.Telegram.WebApp;
+    let idUser = tg.initDataUnsafe.user.id;
     const totalCostElement = document.getElementById('total-cost');
     let cartTotal = 0;
 
@@ -157,7 +157,7 @@ window.document.addEventListener('DOMContentLoaded' , function main() {
 
     function sendCartToTelegram() {
         const botToken = '6722686062:AAEjO0wEnBC1JJCalkuEEId5a6b3LJJ6yyk';
-        const chatId = '841954369';
+        const chatId = user.id;
 
         if (!chatId) {
             console.error('Chat ID not available.');
